@@ -97,6 +97,30 @@ const questions = [
     
       }
     },
+    {
+        type: 'confirm',
+        name: 'confirmContributors',
+        message:'Did anyone else contribute to this project?',
+        default: false
+    },
+    {
+        type: 'input',
+        name: 'contributors',
+        message:'List the GitHub profile links to all contributors on this project',
+        when: ({confirmContributors}) => confirmContributors
+    },
+    {
+        type: 'confirm',
+        name: 'confirmTests',
+        message:'Do you have any tests written for this project?',
+        default: false
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message:'Go the extra mile and write tests for your application. Then provide examples on how to run them.',
+        when: ({confirmTests}) => confirmTests
+    },
 ]
 
 

@@ -50,6 +50,17 @@ function renderEmail(email) {
         return `${installation}`;
     } 
 }
+function renderContributors(contributors) {
+    if (contributors === true) {
+        return `${contributors}`;
+    } 
+}
+
+function renderTests(tests) {
+    if (tests === true) {
+        return `${tests}`;
+    } 
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -80,12 +91,14 @@ function generateMarkdown(data) {
   ${renderLicense(data.license)}
 
   # Contributing
+  Contributors to this project: ${renderContributors(data.contributors)}
 
   # Tests
+  ${renderTests(data.tests)}
 
   # Questions
   https://github.com/${renderUsername(data.username)}
-  ${renderEmail(data.email)}
+  My email: ${renderEmail(data.email)}
   `;
 }
 
