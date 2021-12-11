@@ -1,65 +1,54 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-    console.log('license: ', license);
-    switch (license) {
-      case 'MIT':
-        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
-      case 'Apache':
-        return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
-      case 'BSD':
-        return `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`
-      case 'GNU':
-        return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
-      case 'ISC':
-        return `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-        `
-      default:
-        return `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`
-    }
-  ​
+function renderLicense(license) {
+  console.log('license: ', license);
+  switch (license) {
+    case 'MIT':
+      return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+    case 'Apache':
+      return '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+    case 'BSD':
+      return '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)';
+    case 'GNU':
+      return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
+    case 'ISC':
+      return '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)';
+    default:
+      return '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)';
   }
+}
 
 function renderProjectTitle(title) {
-    if (title === true) {
-        return `${title}`;
-    } 
+    return `${title}`;
 }
 
 
 function renderProjectDescription(description) {
-    if (description === true) {
-        return `${description}`;
-    } 
+     return `${description}`;
 }
 
 function renderInstallation(installation) {
-    if (installation === true) {
-        return `${installation}`;
-    } 
+      return `${installation}`;
+
 }
 
 function renderUsername(username) {
-    if (username === true) {
-        return `${installation}`;
-    } 
+      return `${username}`;
 }
 
 function renderEmail(email) {
-    if (email === true) {
-        return `${installation}`;
-    } 
+      return `${email}`;
 }
 function renderContributors(contributors) {
-    if (contributors === true) {
-        return `${contributors}`;
-    } 
+      return `${contributors}`;
 }
 
 function renderTests(tests) {
-    if (tests === true) {
-        return `${tests}`;
-    } 
+      return `${tests}`;
+}
+
+function renderScreenshot(screenshot) {
+      return `${screenshot}`;
 }
 
 // TODO: Create a function to generate markdown for README
@@ -88,7 +77,7 @@ function generateMarkdown(data) {
 
   # Liscense
   This is licensed under: 
-  ${renderLicense(data.license)}
+  // ${renderLicense(data.license)}
 
   # Contributing
   Contributors to this project: ${renderContributors(data.contributors)}
