@@ -3,7 +3,7 @@
   README-generator
 
   # Description
-  This README generator is a CLI that takes in pertinent, user information and generates a unique and professional README.md file that can be added to the user's GitHub Repository.
+  This README generator is a CLI that takes in pertinent user information and generates a unique and professional README.md file that can be added to the user's repository.
 
   # Table of Contents  
   * [Installation](#Installation)
@@ -20,7 +20,7 @@
 
 
   # Installation
-  Simply download the source files, go into the develp directory, open your terminal, and type "node index". Then, follow the prompts.
+  Simply dowload the source files, navigate into the develop directory, open your terminal, and type "node index". Then, follow the prompts.
 
   # Usage
   N/A
