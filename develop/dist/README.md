@@ -1,9 +1,9 @@
 
   # Project Title
-  Matt
+  README-generator
 
   # Description
-  blah
+  This README generator is a CLI that takes in pertinent, user information and generates a unique and professional README.md file that can be added to the user's GitHub Repository.
 
   # Table of Contents  
   * [Installation](#Installation)
@@ -20,22 +20,22 @@
 
 
   # Installation
-  None
+  Simply download the source files, go into the develp directory, open your terminal, and type "node index". Then, follow the prompts.
 
   # Usage
-  No
+  N/A
 
   # Liscense
   This is licensed under: 
   // [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
   # Contributing
-  Contributors to this project: undefined
+  Contributors to this project: undefined (undefined = none)
 
   # Tests
-  undefined
+  undefined (undefined = none)
 
   # Questions
   https://github.com/Msteve27
-  My email: Matt@Vols
+  email: Msteve27@vols.utk.edu
   

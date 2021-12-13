@@ -80,14 +80,14 @@ function generateMarkdown(data) {
   // ${renderLicense(data.license)}
 
   # Contributing
-  Contributors to this project: ${renderContributors(data.contributors)}
+  Contributors to this project: ${renderContributors(data.contributors)} (undefined = none)
 
   # Tests
-  ${renderTests(data.tests)}
+  ${renderTests(data.tests)} (undefined = none)
 
   # Questions
   https://github.com/${renderUsername(data.username)}
-  My email: ${renderEmail(data.email)}
+  email: ${renderEmail(data.email)}
   `;
 }
 
